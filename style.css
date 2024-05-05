@@ -1,0 +1,117 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: hsl(47, 88%, 63%);
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+.main-container{
+    background-color: hsl(0, 0%, 100%);
+    width: 80%;
+    margin: 0;
+    padding: 4%;
+    border-radius: 5%;
+    border: 1px solid black;
+    box-shadow:5px 5px black;
+}
+
+.image{
+    width: 100%;
+    height: 46%;
+    border-radius: 5%;
+    margin: 0;
+}
+.image-holder{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 18.5%;
+}
+.avater{
+    margin-right: 2%;
+}
+h3{
+    margin: 0;
+    align-content: center;
+}
+button{
+    width: 30%;
+    aspect-ratio: 16/6;
+    border: none;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    padding: 0;
+    margin-top: 2%;
+}
+button:hover{
+    background-color:blue;
+    cursor: pointer;
+}
+.main-text{
+    color:  hsl(0, 0%, 50%);
+}
+p, h2{
+    margin: 2.5%;
+}
+
+
+@media(min-width:376px){
+    .main-container{
+        width: 70%;
+        height: 70%;
+        padding: 3%;
+    }
+    .image{
+        height: 38%;
+    }
+}
+@media(min-width:430px){
+    .main-container{
+        width: 59.5%;
+        height: 64%;
+        padding: 3%;
+    }
+    .image{
+        height: 35%;
+    }
+}
+@media(min-width:504px){
+    .main-container{
+        width: 60%;
+        height: fit-content;
+        padding: 3%;
+    }
+}
+@media(min-width:626px){
+    .main-container{
+        width: 50%;
+        height: fit-content;
+        padding: 3%;
+    }
+}
+@media(min-width:769px){
+    body{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .main-container{
+        width: 286px;
+        height: 4o0px;
+        padding: 8px;
+    }
+    .image{
+        width: 100%;
+        height: fit-content;
+    }
+    .avater{
+        height: 50px;
+    }
+    .image-holder{
+        align-content: center;
+        height: 50px;
+    }
+}
